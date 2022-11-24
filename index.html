@@ -5,52 +5,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Tienda-Ecommers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
-        <div class="d-flex fixed-top justify-content-around mt-3">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <img src="/assets/img/descarga.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                        Mia! Pizzeria
-                    </a>
-                </li>
-            </ul>
-            <ul class="nav">    
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="/assets/img/descarga.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Navbar
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                   <a class="nav-link" href="#">Nosotros</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#">Más Pedidos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Recientes</a>
-                  </li>
-              </ul>        
-        </div>              
+                  <a class="nav-link" href="#">Recientes</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main>
-        <div class="d-flex align-items-center justify-content-center h-100">
-            <div>
-                <p class="display-6">Disfruta <br> de las mejores Pizzas de la <br> Ciudad</p>
-                <p class="small ">Disfruta de una buena cena <br> con los mejores platos del restaurante y mejora tu día</p>
-                <input class="border-radius ps-2 pe-2" type="button" value="Ordena ahora">
-
+    <main class="mt-5 d-flex flex-column align-items-center">
+        <section style="height: 100vh;" class="d-flex flex-column justify-content-center">
+            <div class="row g-0 d-flex align-items-center" style="height: 90vh;">
+                <div class="col-md-6 order-md-2 d-flex justify-content-center">
+                    <div class="w-75">
+                        <img class="img-fluid" src="/assets/img/kisspng-pizza-fast-food-take-out-italian-cuisine-ham-delicious-pizza-5a8bdac912ad35.8800012915191149530765.png">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column align-items-center text-right ">
+                    <p class="display-6">Disfruta <br> de las mejores Pizzas <br> de la Ciudad</p>
+                    
+                    <p>Disfruta de una buena cena <br> con los mejores platos del restaurante y <br> mejora tu día</p>
+                    <a class="bg-dark rounded-pill p-2" >Ordena Ahora   </i> </a>
+                </div>
             </div>
-            <div>
-                <img src="/assets/img/kisspng-pizza-fast-food-take-out-italian-cuisine-ham-delicious-pizza-5a8bdac912ad35.8800012915191149530765.png">
+            <img src="/assets/img/kisspng-pizza-food-vecteur-hand-painted-pizza-food-5a9d6ebfb8b942.7136886315202669437566.png" style="scale: 0.1; position:absolute; left: -200px; bottom: 160px ; opacity: .2;">
+    
+        </section>
+        <section style="height: 100vh;" class="w-75  border border-dark d-flex flex-column justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h2>Acerca de Nosotros</h2>
+                <h6>Disfrutar un trozo de pizza hace que agregues color y sabor a tu vida.</h6>
+                <p>La comida nos llega de nuestros parientes, ya sea que tengan alas o raíces. Así consideramos la comida, yo también tengo una cultura. Tiene una historia que pasa de generación en generación.</p>
+                <img class="img-fluid" src="/assets/img/kisspng-hawaiian-pizza-italian-cuisine-pancake-take-out-delicious-pizza-5a8bf4b0105a21.810482061519121584067.png" style="scale: 0.5">
             </div>
-        </div>
+        </section>
+        <section >
+            <h6 class="text-center">Lo Mejor que tenemos</h6>
+            <h2 class="text-center">Más Pedidos</h2>
+            <div class="row gy-4 ">
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top img-fluid" src="/assets/img/kisspng-california-style-pizza-sicilian-pizza-pizza-marghe-pizza-5a8ca3dc85f1c0.0746469015191664285486.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Calabresa</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="card-text"> $900</p>
+                                <div class="p-1 rounded bg-primary">
+                                    <i class="bi bi-handbag "></i>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top img-fluid" src="/assets/img/kisspng-california-style-pizza-sicilian-pizza-pizza-marghe-pizza-5a8ca3dc85f1c0.0746469015191664285486.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Calabresa</h5>
+                            <p class="card-text"> $900</p>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top img-fluid" src="/assets/img/kisspng-california-style-pizza-sicilian-pizza-pizza-marghe-pizza-5a8ca3dc85f1c0.0746469015191664285486.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Calabresa</h5>
+                            <p class="card-text"> $900</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top img-fluid" src="/assets/img/kisspng-california-style-pizza-sicilian-pizza-pizza-marghe-pizza-5a8ca3dc85f1c0.0746469015191664285486.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Calabresa</h5>
+                            <p class="card-text"> $900</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top img-fluid" src="/assets/img/kisspng-california-style-pizza-sicilian-pizza-pizza-marghe-pizza-5a8ca3dc85f1c0.0746469015191664285486.png">
+                        <div class="card-body">
+                            <h5 class="card-title">Calabresa</h5>
+                            <p class="card-text"> $900</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="height: 100vh;" class="d-flex flex-column justify-content-center">
+            <h6 class="text-center">Añadido Recientemente</h6>
+            <h2 class="text-center">Irlandesa c/ rucula</h2>
+            <h2 class="text-center">Strogonoff c/ ternera</h2>
+            <p class="text-center">Echa un vistazo a lo nuevo.<br> Y no te prives de una buena pizza, disfruta y sé feliz.</p>
+            <div class="d-flex justify-content-center">
+                <a class="bg-warning rounded-pill p-2" href="#">Ordena Ahora <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="w-75">
+                    <img class="img-fluid" src="/assets/img/pizzaya-si.png">
+                </div>
+            </div>
+        </section>
+        <section class="d-flex align-items-center" style="height: 100vh;">
+          <div class="d-flex justify-content-center overflow-hidden position-relative" style="height: 50%;">
+            <img class="img-fluid position-absolute" src="/assets/img/porcion.jpg" style="scale: 0.7; left: 110px; bottom: 140px; ">
+            <div class="bg-secondary p-2 rounded d-flex flex-column justify-content-center">
+                <div class="pt-5">
+                    <h2 class="text-center">Novedades</h2>
+                <p>Suscríbase para recibir actualizaciones de ofertas</p>
+                </div>
+                <div class="d-flex justify-content-center justify-self-end ">
+                    <form class="bg-info">
+                        <input type="email" placeholder="Somosfans@pizza.com"></input>
+                        <button class="p-2 bg-warning rounded-pill">Suscribete <i class="bi bi-send"></i> </button>
+                    </form>
+                </div>
+           </div>
+          </div>
+        </section>
+        
+       
     </main>
     <footer>
 
